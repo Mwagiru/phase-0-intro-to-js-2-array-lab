@@ -22,11 +22,26 @@ function destructivelyRemoveFirstCat() {
 }
 destructivelyRemoveFirstCat();
 function appendCat(name){
-    const lotsaCats = [...cats, "Broom"];
-    console.log(lotsaCats);
+    const newCats = [...cats, "Broom"];
+    return newCats;
 }
 appendCat();
-
-
+function prependCat(name) {
+    const lotCats = ["Arnold", ...cats];
+    return lotCats;
+}
+prependCat();
+function removeLastCat(name) {
+    const newPaka = [...cats];
+    newPaka.pop();
+    return newPaka;
+}
+removeLastCat();
+function removeFirstCat(name) {
+    const lotPaka = [...cats];
+    lotPaka.shift();
+    return lotPaka;
+}
+removeFirstCat();
 
   
